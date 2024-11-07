@@ -1,0 +1,14 @@
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\bin\Debug\net8.0\Wahlen.exe
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\bin\Debug\net8.0\Wahlen.deps.json
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\bin\Debug\net8.0\Wahlen.runtimeconfig.json
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\bin\Debug\net8.0\Wahlen.dll
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\bin\Debug\net8.0\Wahlen.pdb
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.AssemblyInfoInputs.cache
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.AssemblyInfo.cs
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.csproj.CoreCompileInputs.cache
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.dll
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\refint\Wahlen.dll
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.pdb
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.genruntimeconfig.cache
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\ref\Wahlen.dll

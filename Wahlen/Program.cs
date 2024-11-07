@@ -10,11 +10,11 @@ namespace Wahlen
     {
         static void Main(string[] args)
         {
-            Wahl Wahl1 = new Wahl();
-            Wahl Wahl2 = new Wahl();
-            Wahl1.BundestaatHinzufuegen();
-            Wahl1.GetWinnerState(Wahl2);
-            Console.WriteLine(Wahl1.Winner(Wahl2));
+            Wahl Partei1 = new Wahl(" ", " ", 0, 0,0,0,0);
+            Wahl Partei2 = new Wahl(" ", " ", 0, 0,0,0,0);
+            Partei1.BundestaatHinzufuegen();
+            Partei1.GetWinnerState(Partei2);
+            Console.WriteLine(Partei1.Winner(Partei2));
             
             
 

@@ -13,6 +13,8 @@ public class Wahl
     private Wahl B2;
     private Wahl B3;
     private Wahl B4;
+    private Wahl S1;
+    private Random _random;
     
     public Wahl(string kuerzel, string name, int wahlleute, int stimmenRepublikaner2020, int stimmenDemokraten2020, int stimmenRepublikaner2024, int stimmenDemokraten2024)
     {
@@ -24,26 +26,18 @@ public class Wahl
         _stimmenRepublikaner2024 = stimmenRepublikaner2024;
         _stimmenDemokraten2024 = stimmenDemokraten2024;
     }
-
-    public Wahl()
-    {
-        _kuerzel = " ";
-        _name = " ";
-        _wahlleute = 0;
-        _stimmenRepublikaner2020 = 0;
-        _stimmenDemokraten2020 = 0;
-        _stimmenRepublikaner2024 = 0;
-        _stimmenDemokraten2024 = 0;
-        
-        
-    }
+    
 
     public void BundestaatHinzufuegen()
     {
+        _random = new Random();
+        
         B1 = new Wahl("FL", "Florida", 29, 2, 1, 0, 0);
         B2 = new Wahl("TX", "Texas", 38, 2, 1, 0, 0);
-        B3 = new Wahl("CA", "Kalifornien", 55, 2, 1, 0, 0);
+        B3 = new Wahl("CA", "Kalifornien", 55, 2, 3, 0, 0);
         B4 = new Wahl("PA", "Pensylvania", 18, 2, 1, 0, 0);
+        S1 = new Wahl("MI", "Mischigen", 10, _random.Next(1, 10), _random.Next(1, 10), _random.Next(1, 10), _random.Next(1, 10));
+        
     }
 
     public void GetWinnerState(Wahl P2)
@@ -65,7 +59,7 @@ public class Wahl
         if (B2._stimmenRepublikaner2020 > B2._stimmenDemokraten2020)
         {
 
-            _wahlleute += B1._wahlleute;
+            _wahlleute += B2._wahlleute;
 
 
         }
@@ -103,6 +97,20 @@ public class Wahl
 
         }
         
+        if (S1._stimmenRepublikaner2020 > S1._stimmenDemokraten2020)
+        {
+
+            _wahlleute += S1._wahlleute;
+
+
+        }
+        else
+        {
+
+            P2._wahlleute += S1._wahlleute;
+
+        }
+        
         
         
         
@@ -112,20 +120,18 @@ public class Wahl
         if (_wahlleute > P2._wahlleute)
         {
 
-            return "Der Sieger ist: Donald Trump und die Republikansiche Partei";
+            return "Der Sieger ist: Donald Trump und die Republikansiche Partei \n" +
+                   "Wahlleute Trump: " + _wahlleute + " \n" +
+                   "Wahlleute Harris: " + P2._wahlleute;
 
 
         }
-        else
-        {
+       
                 
-            return "Die Siegerin ist: Kamala Harris und die Demokratische Partei!";
-                
-        }
-            
-            
-            
-            
+        return "Die Siegerin ist: Kamala Harris und die Demokratische Partei! \n" +
+                   "Wahlleute Trump: " + _wahlleute + " \n" +
+                   "Wahlleute Harris: " + P2._wahlleute;
+        
             
     }
     

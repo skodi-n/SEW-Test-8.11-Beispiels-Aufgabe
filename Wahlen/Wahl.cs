@@ -14,9 +14,6 @@ public class Wahl
     private Wahl B3;
     private Wahl B4;
     
-    
-    
-    
     public Wahl(string kuerzel, string name, int wahlleute, int stimmenRepublikaner2020, int stimmenDemokraten2020, int stimmenRepublikaner2024, int stimmenDemokraten2024)
     {
         _kuerzel = kuerzel;
@@ -43,13 +40,13 @@ public class Wahl
 
     public void BundestaatHinzufuegen()
     {
-        B1 = new Wahl("FL", "Florida", 29, 1000000, 2500000, 0, 0);
-        B2 = new Wahl("TX", "Texas", 38, 1000000, 5500000, 0, 0);
-        B3 = new Wahl("CA", "Kalifornien", 55, 500000, 12000000, 0, 0);
-        B4 = new Wahl("PA", "Pensylvania", 18, 245000, 980000, 0, 0);
+        B1 = new Wahl("FL", "Florida", 29, 2, 1, 0, 0);
+        B2 = new Wahl("TX", "Texas", 38, 2, 1, 0, 0);
+        B3 = new Wahl("CA", "Kalifornien", 55, 2, 1, 0, 0);
+        B4 = new Wahl("PA", "Pensylvania", 18, 2, 1, 0, 0);
     }
 
-    public void GetWinnerState()
+    public void GetWinnerState(Wahl P2)
     {
         if (B1._stimmenRepublikaner2020 > B1._stimmenDemokraten2020)
         {
@@ -61,7 +58,7 @@ public class Wahl
         else
         {
 
-            this._wahlleute += B1._wahlleute;
+            P2._wahlleute += B1._wahlleute;
 
         }
 
@@ -75,7 +72,7 @@ public class Wahl
         else
         {
 
-            this._wahlleute += B2._wahlleute;
+            P2._wahlleute += B2._wahlleute;
 
         }
         if (B3._stimmenRepublikaner2020 > B3._stimmenDemokraten2020)
@@ -88,7 +85,7 @@ public class Wahl
         else
         {
 
-            this._wahlleute += B3._wahlleute;
+            P2._wahlleute += B3._wahlleute;
 
         }
 
@@ -102,7 +99,7 @@ public class Wahl
         else
         {
 
-            this._wahlleute += B4._wahlleute;
+            P2._wahlleute += B4._wahlleute;
 
         }
         
@@ -110,16 +107,15 @@ public class Wahl
         
         
     }
-    public string Winner()
+    public string Winner(Wahl P2)
     {
-        if (_wahlleute > this._wahlleute)
+        if (_wahlleute > P2._wahlleute)
         {
 
             return "Der Sieger ist: Donald Trump und die Republikansiche Partei";
 
 
         }
-
         else
         {
                 

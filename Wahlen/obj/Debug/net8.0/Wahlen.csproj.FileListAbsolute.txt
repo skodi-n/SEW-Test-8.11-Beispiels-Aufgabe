@@ -12,3 +12,4 @@ C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\refint\Wahlen.dll
 C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.pdb
 C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.genruntimeconfig.cache
 C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\ref\Wahlen.dll
+C:\Users\skodl\RiderProjects\Wahlen\Wahlen\obj\Debug\net8.0\Wahlen.sourcelink.json

@@ -12,10 +12,9 @@ namespace Wahlen
         {
             Wahl Wahl1 = new Wahl();
             Wahl Wahl2 = new Wahl();
-            
             Wahl1.BundestaatHinzufuegen();
-            Wahl1.GetWinnerState();
-            Console.WriteLine(Wahl1.Winner());
+            Wahl1.GetWinnerState(Wahl2);
+            Console.WriteLine(Wahl1.Winner(Wahl2));
             
             
 
